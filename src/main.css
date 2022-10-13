@@ -11,13 +11,12 @@
        @apply appearance-none
     }
 
-    html,
-    body {
-        @apply max-h-full
-    }
-
     img {
         @apply object-cover object-center aspect-square
+    }
+
+    * {
+        @apply origin-center
     }
 
     .fi {
@@ -29,12 +28,15 @@
     }
 
     .custom-scrollbar {
-        scrollbar-width: thin;
-        -ms-overflow-style: thin;
+        /* scrollbar-width: thin;
+        -ms-overflow-style: thin; */
+        scrollbar-width: none;
+        -ms-overflow-style: none;
         scrollbar-color: #609eaf #efeee0;
     }
 
     .custom-scrollbar::-webkit-scrollbar {
+        display: none;
         height: .5rem;
         width: .25rem;
         margin-top: 4rem;

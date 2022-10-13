@@ -1,8 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 const Header = () => {
+	const router = useRouter();
+
 	const [isActive, setIsActive] = useState(false);
 	const [searchBarIsActive, setSearchBarIsActive] = useState(false);
 
@@ -13,6 +16,10 @@ const Header = () => {
 	const handleSearchBarToggleClick = () => {
 		setSearchBarIsActive(() => !searchBarIsActive);
 	};
+
+	useEffect(() => {
+		setIsActive(() => isActive = false);
+	}, [router.asPath]);
 
     return (
 		<header className="bg-custom-black sticky top-0 backdrop-blur-md bg-opacity-80 z-[1024]">
@@ -67,8 +74,8 @@ const Header = () => {
 					<div className="grid gap-8 lg:bg-navbar lg:py-4 lg:px-3.5 lg:rounded-t-3xl lg:rounded-b-3xl lg:gap-4">
 						<li>
 							<Link href="/">
-								<a className="flex items-center gap-4 font-bold lg:text-lg">
-									<i className="fi fi-sr-home text-yellow-300"></i>
+								<a className={`flex items-center gap-4 lg:text-lg transition-all ease-linear duration-500 ${router.asPath === '/' ? 'font-bold text-yellow-300' : 'hover:text-yellow-300 text-slate-100'}`}>
+									<i className="fi fi-sr-home text-inherit"></i>
 									<span className="lg:hidden">
 										Home
 									</span>
@@ -78,8 +85,8 @@ const Header = () => {
 
 						<li>
 							<Link href="/collections">
-								<a className="flex items-center gap-4 hover:text-yellow-300 group lg:text-lg">
-									<i className="group-hover:text-yellow-300 fi fi-sr-music-alt text-slate-100"></i>
+								<a className={`flex items-center gap-4 lg:text-lg ${router.asPath === '/collections' ? 'font-bold text-yellow-300' : 'hover:text-yellow-300 text-slate-100'}`}>
+									<i className="fi fi-sr-music-alt text-inherit"></i>
 									<span className="lg:hidden">
 										My Collections
 									</span>

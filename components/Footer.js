@@ -2,12 +2,12 @@ import Image from "next/future/image";
 
 const Footer = () => {
     return (
-        <footer className="backdrop-blur-md sticky bg-opacity-80 bottom-0 bg-custom-dark-black py-2 px-4 border-t border-gray-700 flex justify-between items-center gap-y-2 gap-x-4 z-50 lg:pl-20 lg:pr-8 lg:grid lg:grid-cols-3 lg:pb-8">
+        <footer className="backdrop-blur-md sticky w-full bg-opacity-80 bottom-0 bg-custom-dark-black py-2 px-4 border-t border-gray-700 flex justify-between items-center gap-y-2 gap-x-4 z-50 lg:pl-20 lg:pr-6 lg:grid lg:grid-cols-3 lg:pb-8">
             <div className="grid grid-cols-2 items-center gap-2 lg:grid-cols-12">
                 <div className="w-full h-[70px] relative overflow-hidden rounded-xl lg:col-span-3 lg:h-[60px]">
                     <Image
                         className="w-full h-auto rounded-xl object-cover object-center bg-red-500"
-                        src="/now-playing.png"
+                        src="/now-playing.svg"
                         alt="Seasons in"
                         priority={true}
                         quality={100}

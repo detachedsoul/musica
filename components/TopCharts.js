@@ -4,21 +4,21 @@ const TopCharts = () => {
     const charts = [
         {
             id: 1,
-            image: "/golden-age.png",
+            image: "/golden-age.svg",
             title: "Golden age of 80s",
             singer: "Sean Swadder",
             duration: "2:34:45",
         },
         {
             id: 2,
-            image: "/reggae-blues.png",
+            image: "/reggae-blues.svg",
             title: "Reggae 'n' blues",
             singer: "Dj YK mule",
             duration: "1:02:42",
         },
         {
             id: 3,
-            image: "/tomorrows-tune.png",
+            image: "/tomorrows-tune.svg",
             title: "Tomorrow’s tunes",
             singer: "Obi Datti",
             duration: "2:01:25",

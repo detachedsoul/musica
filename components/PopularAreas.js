@@ -1,6 +1,6 @@
 import Image from "next/future/image";
 
-const NewReleases = () => {
+const PopularAreas = () => {
     const charts = [
         {
             id: 1,
@@ -77,4 +77,4 @@ const NewReleases = () => {
 	);
 };
 
-export default NewReleases;
+export default PopularAreas;

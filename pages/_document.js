@@ -5,11 +5,6 @@ const MyDocument = () => {
         <Html lang="en">
             <Head>
                 <link
-                    rel="preload"
-                    href="/fonts/fonts.min.css"
-                    as="style"
-                />
-                <link
                     rel="icon"
                     href="/logo.png"
                 />
