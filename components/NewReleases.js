@@ -47,33 +47,34 @@ const NewReleases = () => {
     ];
 
     return (
-        <>
-            {charts.map(chart => (
-                <div className="grid gap-1 min-w-[40%] lg:w-full rounded-xl" key={chart.id}>
-                    <div className="w-full h-[100px] relative overflow-hidden rounded-xl lg:col-span-3 lg:w-full lg:h-auto">
-                        <Image
-                            className="w-full h-auto rounded-xl object-cover object-center"
-                            src={chart.image}
-                            alt={chart.title}
-                            priority={true}
-                            quality={100}
-                            fill
-                        />
-                    </div>
+		<>
+			{charts.map((chart) => (
+				<div
+					className="grid gap-1 min-w-[40%] lg:min-w-[14.5%] rounded-xl"
+					key={chart.id}
+				>
+					<div className="w-full h-[100px] relative overflow-hidden rounded-xl lg:col-span-3 lg:w-full lg:h-[150px]">
+						<Image
+							className="w-full h-auto rounded-xl object-cover object-center"
+							src={chart.image}
+							alt={chart.title}
+							priority={true}
+							quality={100}
+							fill
+						/>
+					</div>
 
-                    <div className="space-y-0.5">
-                        <h4 className="text-white header text-md">
-                            {chart.title}
-                        </h4>
+					<div className="space-y-0.5">
+						<h4 className="text-white header text-md">
+							{chart.title}
+						</h4>
 
-                        <p>
-                            {chart.singer}
-                        </p>
-                    </div>
-                </div>
-            ))}
-        </>
-    );
+						<p>{chart.singer}</p>
+					</div>
+				</div>
+			))}
+		</>
+	);
 };
 
 export default NewReleases;

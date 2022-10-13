@@ -30,7 +30,7 @@ const TopCharts = () => {
             {charts.map(chart => (
                 <div className="rounded-xl bg-custom-dark-black p-4 grid gap-4 grid-cols-12 items-start min-w-[90%] mx-auto lg:min-w-full" key={chart.id}>
                     <div className="grid gap-4 lg:grid-cols-12 col-span-10">
-                        <div className="w-[70%] h-[100px] relative overflow-hidden rounded-xl lg:col-span-3 lg:w-full lg:h-auto">
+                        <div className="w-[70%] h-[100px] relative overflow-hidden rounded-xl lg:col-span-3 lg:w-full lg:h-[70px]">
                             <Image
                                 className="w-full h-auto rounded-xl object-cover object-center"
                                 src={chart.image}
@@ -41,8 +41,8 @@ const TopCharts = () => {
                             />
                         </div>
 
-                        <div className="lg:col-span-9 space-y-1.5">
-                            <div className="space-y-1.5">
+                        <div className="lg:col-span-9 space-y-1.5 lg:space-y-0.5">
+                            <div className="space-y-1.5 lg:space-y-0.5">
                                 <h4 className="text-white header text-lg">
                                     {chart.title}
                                 </h4>

@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 @layer base {
+    [type="search"]::-webkit-search-cancel-button,
+    [type="search"]::-webkit-search-decoration,
+    [type="search"]::-webkit-search-results-button,
+    [type="search"]::-webkit-search-results-decoration,
+    [type="search"]::-webkit-search-results-button {
+       @apply appearance-none
+    }
+
+    html,
+    body {
+        @apply max-h-full
+    }
+
     img {
         @apply object-cover object-center aspect-square
     }
@@ -18,11 +31,11 @@
     .custom-scrollbar {
         scrollbar-width: thin;
         -ms-overflow-style: thin;
-        scrollbar-color: #38bdf8 #e5e5e5;
+        scrollbar-color: #609eaf #efeee0;
     }
 
     .custom-scrollbar::-webkit-scrollbar {
-        height: .375rem;
+        height: .5rem;
         width: .25rem;
         margin-top: 4rem;
     }
@@ -35,7 +48,7 @@
     .custom-scrollbar::-webkit-scrollbar-track {
         border-radius: .375rem;
         --tw-bg-opacity: 1;
-        background-color: rgb(243 244 246/var(--tw-bg-opacity));
+        background-color: rgb(239 238 224/var(--tw-text-opacity));
     }
 
     .custom-scrollbar::-webkit-scrollbar-thumb {
@@ -44,7 +57,7 @@
         border-width: 8px;
         border-color: #0000;
         --tw-bg-opacity: 1;
-        background-color: rgb(14 165 233/var(--tw-bg-opacity));
+        background-color: rgb(96 158 175/var(--tw-bg-opacity));
         background-clip: content-box;
     }
 }

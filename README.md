@@ -1,3 +1,3 @@
 # Musica App
 
-This the #CODING360CHALLENGE for October.
+This is the #CODING360CHALLENGE for October.
