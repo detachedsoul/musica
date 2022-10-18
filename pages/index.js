@@ -108,7 +108,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="hidden lg:block">
+            <div>
                 <h3 className="header text-xl">
                     Popular in your area
                 </h3>

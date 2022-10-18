@@ -95,9 +95,9 @@ const Header = () => {
 						</li>
 
 						<li>
-							<Link href="">
-								<a className="flex items-center gap-4 hover:text-yellow-300 group lg:text-lg">
-									<i className="group-hover:text-yellow-300 fi fi-sr-tv-music text-slate-100"></i>
+							<Link href="/chart">
+								<a className={`flex items-center gap-4 lg:text-lg ${router.asPath === '/chart' ? 'font-bold text-yellow-300' : 'hover:text-yellow-300 text-slate-100'}`}>
+									<i className="fi fi-sr-tv-music  text-inherit"></i>
 									<span className="lg:hidden">
 										Music
 									</span>

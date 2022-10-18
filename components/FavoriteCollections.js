@@ -36,7 +36,7 @@ const FavoriteCollections = () => {
         <>
             {collections.map(collection => (
                 <div className="relative group overflow-y-hidden lg:hover:scale-105 transition-all ease-linear duration-500" key={collection.id}>
-                    <div className="w-full h-[200px] relative overflow-y-hidden rounded-xl lg:col-span-3 lg:w-full lg:h-[250px]">
+                    <div className="w-full h-[220px] relative overflow-y-hidden rounded-xl lg:col-span-3 lg:w-full lg:h-[250px]">
                         <Image
                             className="w-full h-auto rounded-xl object-cover object-center"
                             src={collection.coverArt}
@@ -64,7 +64,7 @@ const FavoriteCollections = () => {
                             </p>
                         </div>
 
-                        <span className="rounded-full bg-yellow-300 bg-opacity-80 backdrop-blur-sm hover:bg-yellow-400 py-[0.4rem] px-[0.55rem] lg:scale-0 group-hover:scale-100 transition-all ease-linear duration-500 lg:absolute lg:right-0 lg:bottom-4">
+                        <span className="rounded-full bg-yellow-300 bg-opacity-80 backdrop-blur-sm hover:bg-yellow-400 py-[0.35rem] px-[0.55rem] lg:scale-0 group-hover:scale-100 transition-all ease-linear duration-500 lg:absolute lg:right-0 lg:bottom-4">
                             <i className="fi fi-sr-play text-white top-0.5 relative text-sm left-[0.05rem]"></i>
                         </span>
                     </div>

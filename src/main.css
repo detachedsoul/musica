@@ -62,4 +62,8 @@
         background-color: rgb(96 158 175/var(--tw-bg-opacity));
         background-clip: content-box;
     }
+
+    .chart-container > :nth-child(even) {
+        @apply ml-auto lg:ml-0
+    }
 }

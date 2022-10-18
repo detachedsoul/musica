@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/future/image";
-import FavoriteCollections from "@components/FavoriteCollections.js";
+import FavoriteCollections from "@components/FavoriteCollections";
 
 const Collections = () => {
     return (

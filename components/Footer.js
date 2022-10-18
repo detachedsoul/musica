@@ -2,7 +2,7 @@ import Image from "next/future/image";
 
 const Footer = () => {
     return (
-        <footer className="backdrop-blur-md sticky w-full bg-opacity-80 bottom-0 bg-custom-dark-black py-2 px-4 border-t border-gray-700 flex justify-between items-center gap-y-2 gap-x-4 z-50 lg:pl-20 lg:pr-6 lg:grid lg:grid-cols-3 lg:pb-8">
+        <footer className="backdrop-blur-md fixed left-0 right-0 w-full bg-opacity-80 bottom-0 bg-custom-dark-black py-2 px-4 border-t border-gray-700 flex justify-between items-center gap-y-2 gap-x-4 z-50 lg:pl-20 lg:pr-6 lg:grid lg:grid-cols-3 lg:pb-8">
             <div className="grid grid-cols-2 items-center gap-2 lg:grid-cols-12">
                 <div className="w-full h-[70px] relative overflow-hidden rounded-xl lg:col-span-3 lg:h-[60px]">
                     <Image
@@ -16,7 +16,7 @@ const Footer = () => {
                 </div>
 
                 <div className="lg:col-span-9">
-                    <h4 class="header text-white">
+                    <h4 className="header text-white">
                         Seasons in
                     </h4>
 
@@ -31,7 +31,7 @@ const Footer = () => {
                     <i className="fi fi-sr-shuffle text-white"></i>
                 </span>
 
-                <span className="hidden lg:block text-lg">
+                <span className="text-lg">
                     <i className="fi fi-sr-rewind text-white"></i>
                 </span>
 
@@ -48,19 +48,19 @@ const Footer = () => {
                 </span>
             </div>
 
-            <div className="items-center gap-4 hidden lg:flex gap-4 grow">
+            <div className="items-center gap-4 hidden lg:flex grow">
                 <span className="hidden lg:block text-lg">
                     <i className="fi fi-sr-volume text-white"></i>
                 </span>
 
-                <div class="relative w-full h-0.5 p-0.5 bg-gray-600 rounded-xl">
-                    <div class="absolute h-0.5 p-0.5 bg-index-hero top-0 w-1/2 left-0 rounded-xl"></div>
+                <div className="relative w-full h-0.5 p-0.5 bg-gray-600 rounded-xl">
+                    <div className="absolute h-0.5 p-0.5 bg-index-hero top-0 w-1/2 left-0 rounded-xl"></div>
                 </div>
             </div>
 
             <div className="absolute bottom-4 w-[32.26%] left-[32.26%] hidden lg:block">
-                <div class="relative w-full h-1 p-1 bg-slate-600 rounded-xl">
-                    <div class="absolute h-1 p-1 bg-index-hero top-0 w-1/2 left-0 rounded-xl before:w-4 before:rounded-full before:absolute before:bg-yellow-300 before:h-4 before:px-[0.06rem] before:-top-1 before:-right-[calc(10%/2)] after:absolute after:w-6 after:rounded-full before:absolute after:h-6 after:px-[0.08rem] after:-top-2 after:-right-[calc(14.5%/2)] after:border-2 after:border-custom-white"></div>
+                <div className="relative w-full h-1 p-1 bg-slate-600 rounded-xl">
+                    <div className="absolute h-1 p-1 bg-index-hero top-0 w-1/2 left-0 rounded-xl before:w-4 before:rounded-full before:absolute before:bg-yellow-300 before:h-4 before:px-[0.06rem] before:-top-1 before:-right-[calc(10%/2)] after:absolute after:w-6 after:rounded-full after:h-6 after:px-[0.08rem] after:-top-2 after:-right-[calc(14.5%/2)] after:border-2 after:border-custom-white"></div>
                 </div>
             </div>
         </footer>
