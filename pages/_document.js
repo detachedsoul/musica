@@ -17,7 +17,7 @@ const MyDocument = () => {
 					rel="stylesheet"
 				/>
 			</Head>
-			<body className="font-quicksand bg-custom-black text-custom-white antialiased tracking-wide text-sm overscroll-contain selection:bg-index-hero selection:text-white break-words scroll-smooth [word-break:break-word] [word-wrap:break-word] relative">
+			<body className="font-quicksand bg-custom-black text-custom-white antialiased tracking-wide text-normal overscroll-contain selection:bg-index-hero selection:text-white break-words scroll-smooth [word-break:break-word] [word-wrap:break-word] relative">
 				<Main />
 				<NextScript />
 			</body>

@@ -11,12 +11,12 @@
        @apply appearance-none
     }
 
-    img {
-        @apply object-cover object-center aspect-square
-    }
-
     * {
         @apply origin-center
+    }
+
+    img {
+        @apply object-cover object-center aspect-square
     }
 
     .fi {
@@ -36,7 +36,7 @@
     }
 
     .custom-scrollbar::-webkit-scrollbar {
-        display: none;
+        /* display: none; */
         height: .5rem;
         width: .25rem;
         margin-top: 4rem;

@@ -35,7 +35,7 @@ const Footer = () => {
                     <i className="fi fi-sr-rewind text-white"></i>
                 </span>
 
-                <span className="rounded-full bg-yellow-300 hover:bg-yellow-400 py-[0.4rem] px-[0.6rem]">
+                <span className="rounded-full bg-yellow-300 hover:bg-yellow-400 py-[0.3rem] px-[0.6rem]">
                     <i className="fi fi-sr-play text-white top-0.5 relative text-sm left-[0.05rem]"></i>
                 </span>
 

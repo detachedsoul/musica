@@ -19,6 +19,7 @@ const Header = () => {
 
 	useEffect(() => {
 		setIsActive(() => isActive = false);
+		setSearchBarIsActive(() => searchBarIsActive = false);
 	}, [router.asPath]);
 
     return (
