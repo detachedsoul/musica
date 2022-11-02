@@ -6,17 +6,22 @@ import ChartsApi from "@api/ChartsApi";
 const Chart = ({ chart }) => {
     return (
 		<>
-			<Head>
-				<title>Musica | {chart.map(chart => chart.title)}</title>
-				<meta
-					name="description"
-					content="Musica is a music streaming app"
-				/>
-			</Head>
+				{chart.map((chart, index) => (
+					<Head key={index}>
+						<title>Musica | {chart.title}</title>
+						<meta
+							name="description"
+							content="Musica is a music streaming app"
+						/>
+					</Head>
+				))}
 
 			<div className="flex flex-col gap-6 flex-wrap lg:items-end lg:grid lg:grid-cols-12">
 				{chart.map((chart, index) => (
-					<div className="w-full h-[220px] relative overflow-y-hidden rounded-xl lg:h-[270px] lg:col-span-4" key={index}>
+					<div
+						className="w-full h-[220px] relative overflow-y-hidden rounded-xl lg:h-[270px] lg:col-span-4"
+						key={index}
+					>
 						<Image
 							className="w-full h-auto rounded-xl object-cover object-center"
 							src={chart.image}
@@ -74,11 +79,11 @@ const Chart = ({ chart }) => {
 			</div>
 
 			<div className="grid gap-4 mt-8">
-				{chart.map((charts) => (
+				{chart.map((charts) =>
 					charts.songs.map((chart, index) => (
 						<ViewChart data={chart} key={index} />
-					))
-				))}
+					)),
+				)}
 			</div>
 		</>
 	);
